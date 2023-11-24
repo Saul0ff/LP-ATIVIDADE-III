@@ -10,7 +10,7 @@ int main(){
     int idades[5], i, j;
     float notas[5][3], somaNotas = 0, media[5];
 
-    for ( i = 0; i < 3; i++) {
+    for ( i = 0; i < 5; i++) {
         printf("Digite o nome: ");
         gets(alunos[i]);
 
@@ -18,7 +18,7 @@ int main(){
         scanf("%d", &idades[i]);
 
         for ( j = 0; j < 3; j++) {
-            printf("Digite a %dª nota: ", j + 1);
+            printf("Digite a %dÂª nota: ", j + 1);
             scanf("%f", &notas[i][j]);
 
             somaNotas += notas[i][j];
@@ -32,18 +32,18 @@ int main(){
     
     system("cls || clear");
 
-    for ( i = 0; i < 3; i++) {
+    for ( i = 0; i < 5; i++) {
         printf("Aluno: %s\n", alunos[i]);
         printf("Idade: %d\n", idades[i]);
             for ( j = 0; j < 3; j++) {
-                printf("%dª nota: %.1f\n", i + 1, notas[i][j]);
+                printf("%dÂª nota: %.1f\n", i + 1, notas[i][j]);
             }
-        printf("Média: %.1f\n", media[i]);
+        printf("MÃ©dia: %.1f\n", media[i]);
 
         if (media[i] >= 7) {
             printf("Aprovado !\n\n");
         } else if (media[i] >= 5) {
-            printf("Recuperação !\n\n");
+            printf("RecuperaÃ§Ã£o !\n\n");
         } else if (media[i] < 5) {
             printf("Reprovado !\n\n");
         }
